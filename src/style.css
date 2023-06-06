@@ -14,7 +14,7 @@ body {
 }
 
 .webgl{
-    background-color: rgb(91, 112, 131);
+    background-color: rgb(169, 186, 200);
     height: 100vh;
     width: 60vw;
     transition: 0.2s;
