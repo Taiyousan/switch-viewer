@@ -85,13 +85,19 @@ gltfLoader.load(
     (gltf) => {
 
         const scale = 0.7
+        const ecran = gltf.scene.getObjectByName('Cube_1')
+        console.log('ecran : ')
+        console.log(ecran)
 
         gltf.scene.scale.set(scale, scale, scale)
         gltf.scene.rotation.z = 0.05
+        gltf.scene.receiveShadow = true
+
 
         // Parcourir les matériaux du modèle
         console.log('Modèle :')
-        console.log(gltf.scene)
+        console.log(gltf.scene.getObjectByName('Cube_1'))
+        // console.log(gltf.scene)
 
         scene.add(gltf.scene)
 
